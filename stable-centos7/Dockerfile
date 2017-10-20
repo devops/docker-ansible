@@ -1,6 +1,6 @@
 # Latest version of centos
 FROM centos:centos7
-MAINTAINER z <devops@163.com>
+LABEL maintainer="devops@163.com"
 RUN yum clean all && \
     yum -y install epel-release && \
     yum -y install git python-pip python-setuptools && \
